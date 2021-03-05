@@ -1,0 +1,32 @@
+---
+galaxy_info:
+  role_name: oh-my-zsh
+  author: kwusen
+  description: Role for installing and configuring oh-my-zsh.
+  company: kwusen
+  license: MIT
+  min_ansible_version: 2.8
+  platforms:
+    - name: EL
+      versions:
+        - 7
+    - name: Fedora
+      versions:
+        - 31
+    - name: opensuse
+      versions:
+        - 15.1
+    - name: Ubuntu
+      versions:
+        - xenial
+        - bionic
+    - name: Debian
+      versions:
+        - jessie
+        - stretch
+  galaxy_tags:
+    - ohmyzsh
+    - zsh
+    - shell
+    - development
+dependencies: []

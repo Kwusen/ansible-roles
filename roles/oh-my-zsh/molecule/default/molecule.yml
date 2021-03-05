@@ -1,0 +1,24 @@
+---
+dependency:
+  name: galaxy
+
+driver:
+  name: docker
+
+lint: |
+  set -e
+  yamllint .
+  #ansible-lint
+  flake8
+
+platforms:
+  - name: ansible-role-oh-my-zsh-debian-max
+    image: debian:10
+  - name: ansible-role-oh-my-zsh-ubuntu-max
+    image: ubuntu:20.04
+
+provisioner:
+  name: ansible
+
+verifier:
+  name: testinfra
