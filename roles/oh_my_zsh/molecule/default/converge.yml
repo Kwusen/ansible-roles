@@ -34,7 +34,7 @@
         mode: 'u=rwx,go=r'
 
   roles:
-    - role: oh-my-zsh
+    - role: kwusen.kwusen.oh_my_zsh
       oh_my_zsh__theme: test_theme1
       oh_my_zsh__plugins:
         - test_plugin1
@@ -51,7 +51,7 @@
           oh_my_zsh:
             install: no
 
-    - role: oh-my-zsh
+    - role: kwusen.kwusen.oh_my_zsh
       oh_my_zsh__theme: test_theme1
       oh_my_zsh__plugins:
         - test_plugin1

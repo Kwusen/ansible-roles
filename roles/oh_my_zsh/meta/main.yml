@@ -1,6 +1,7 @@
 ---
+collections: ['kwusen.kwusen']
+
 galaxy_info:
-  role_name: oh-my-zsh
   author: kwusen
   description: Role for installing and configuring oh-my-zsh.
   company: kwusen
@@ -25,7 +26,7 @@ galaxy_info:
         - jessie
         - stretch
   galaxy_tags:
-    - ohmyzsh
+    - oh-my-zsh
     - zsh
     - shell
     - development
