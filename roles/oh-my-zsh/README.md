@@ -75,18 +75,18 @@ oh_my_zsh__install: yes
 # User configuration
 # Important: oh-my-zsh is installed per user so you need to specify the users to install it for.
 oh_my_zsh__users:
-  - username: example1
+  - name: example1
     oh_my_zsh:
       theme: robbyrussell
       plugins:
         - git
-  - username: example2
+  - name: example2
     oh_my_zsh:
       theme: robbyrussell
       plugins:
         - git
         - mvn
-  - username: example3
+  - name: example3
     oh_my_zsh:
       install: no
 ```
@@ -99,7 +99,7 @@ Example Playbook
   roles:
     - role: gantsign.oh-my-zsh
       oh_my_zsh__users:
-        - username: example
+        - name: example
 ```
 
 More Roles From GantSign

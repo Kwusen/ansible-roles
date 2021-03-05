@@ -40,14 +40,14 @@
         - test_plugin1
         - test_plugin2
       oh_my_zsh__users:
-        - username: test_usr1
-        - username: test_usr2
+        - name: test_usr1
+        - name: test_usr2
           oh_my_zsh:
             theme: test_theme2
             plugins:
               - test_plugin3
               - test_plugin4
-        - username: test_usr3
+        - name: test_usr3
           oh_my_zsh:
             install: no
 
@@ -58,8 +58,8 @@
         - test_plugin2
       oh_my_zsh__install: no
       oh_my_zsh__users:
-        - username: test_usr4
-        - username: test_usr5
+        - name: test_usr4
+        - name: test_usr5
           oh_my_zsh:
             install: yes
             theme: test_theme2
