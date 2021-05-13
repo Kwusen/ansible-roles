@@ -101,3 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+{% for line in (oh_my_zsh__combined_zshrc_lines | flatten) %}
+{{ line }}
+{% endfor %}

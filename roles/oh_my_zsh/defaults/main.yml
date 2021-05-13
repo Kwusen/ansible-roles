@@ -9,3 +9,12 @@ oh_my_zsh__plugins:
 # Wether to install by default for all specified users.
 # May be overridden by `oh_my_zsh__install` under each user.
 oh_my_zsh__install: yes
+
+oh_my_zsh__zshrc_lines: []
+oh_my_zsh__host_zshrc_lines: []
+oh_my_zsh__group_zshrc_lines: []
+oh_my_zsh__dependent_zshrc_lines: []
+oh_my_zsh__combined_zshrc_lines: "{{ oh_my_zsh__zshrc_lines
+                                  + oh_my_zsh__host_zshrc_lines
+                                  + oh_my_zsh__group_zshrc_lines
+                                  + oh_my_zsh__dependent_zshrc_lines }}"
